@@ -1,0 +1,26 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+"title": "Novo",
+"details": "eressss",
+"maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/feddfc31-af18-4dff-b5b2-75ce6d9a8b01/attendees
+Content-Type: application/json
+
+{
+    "name": "Matheus",
+    "email": "mathu22@t.com"
+}
+
+###
+
+GET  http://localhost:3333/events/feddfc31-af18-4dff-b5b2-75ce6d9a8b01
+
+
+###
+GET http://localhost:3333/attendees/3/badge
